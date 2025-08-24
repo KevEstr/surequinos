@@ -3,70 +3,56 @@ import Image from "next/image"
 export default function SurequinosLanding() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-[#a13815] py-4">
-        <div className="container mx-auto px-4">
-          <div className="text-center">
-            <h1 className="text-white text-2xl font-bold tracking-wider">
-              <span className="text-lg">Talabartería</span>
-              <br />
-              <span className="text-3xl font-bold">SUREQUINOS</span>
-            </h1>
-          </div>
-        </div>
-      </header>
+                  {/* Logo */}
+      <div className="bg-[#a13815] flex justify-center items-center h-24">
+        <Image
+          src="/logo.png"
+          alt="Talabartería Surequinos - Logo"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="h-48 w-auto"
+          priority
+        />
+      </div>
 
-      {/* Main Image Area */}
-      <section className="bg-gray-200 h-[500px] md:h-[600px]">
-        <div className="w-full h-full">
-          <Image
-            src="/principal.jpg"
-            alt="Talabartería Surequinos - Imagen principal"
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="w-full h-full object-cover object-[center_35%]"
-            priority
-          />
-        </div>
-      </section>
-
-      {/* "El arte de ensillar" Banner - Full Width */}
-      <section className="relative">
-        <div className="py-6" style={{ background: 'linear-gradient(to bottom, #f8f6f4 0%, #cf9a8d 20%, #a13815 40%, #632416 75%, #2f1d17 100%)' }}>
-          <div className="text-center">
-            <h2 className="text-4xl md:text-5xl text-[#F5E6D3] font-great-vibes">
-              El <span className="italic">arte</span> de <span className="italic">ensillar</span>
-            </h2>
-          </div>
-        </div>
-        {/* Línea de separación */}
-        <div className="h-1 bg-[#2f1d17]"></div>
+      {/* Main Image Area - Unificada con "El arte de ensillar" */}
+      <section className="w-full">
+        <Image
+          src="/arte.png"
+          alt="El arte de ensillar - Talabartería Surequinos"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full h-auto"
+          priority
+        />
       </section>
 
       {/* Main Content Section */}
-      <section className="py-12 relative" style={{ backgroundImage: 'url(/fondo.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
-        <div className="container mx-auto px-4 text-center text-white relative z-10">
-          <div className="space-y-6">
-            <h3 className="text-2xl md:text-3xl font-merriweather font-normal tracking-wide">ESTAMOS PREPARANDO</h3>
-            <h4 className="text-2xl md:text-3xl font-merriweather italic text-[#F5E6D3]">NUESTRA NUEVA PÁGINA WEB</h4>
-            <p className="text-lg md:text-xl font-merriweather text-[#F5E6D3] max-w-2xl mx-auto leading-relaxed">
-              Muy pronto podrás conocer cada detalle de
-              <br />
-              nuestras sillas, riendas, talabartería y más.
-            </p>
-          </div>
-        </div>
+      <section className="w-full">
+        <Image
+          src="/preparando.png"
+          alt="Estamos preparando nuestra nueva página web"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full h-auto"
+          priority
+        />
       </section>
 
       {/* Instagram Banner - Full Width */}
-      <section className="bg-[#a13815] py-6">
-        <div className="text-center">
-          <p className="text-xl md:text-2xl font-merriweather text-white">
-            Síguenos <span className="font-great-vibes italic text-2xl md:text-3xl">en </span>
-            <span className="font-great-vibes italic text-2xl md:text-3xl">instagram</span>
-          </p>
-        </div>
+      <section className="w-full">
+        <Image
+          src="/siguenos.png"
+          alt="Síguenos en instagram"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full h-auto"
+          priority
+        />
       </section>
 
       {/* Product Gallery */}
