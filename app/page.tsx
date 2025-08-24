@@ -60,36 +60,36 @@ export default function SurequinosLanding() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {/* Product Images */}
-            <div className="transform hover:scale-105 transition-transform duration-300">
+            <div className="transform hover:scale-105 transition-transform duration-300 flex justify-center">
               <Image
                 src="/Recurso 1.png"
                 alt="Producto talabartería 1"
                 width={0}
                 height={0}
                 sizes="100vw"
-                className="w-auto h-auto"
+                className="w-auto h-auto max-h-64 md:max-h-none"
                 priority
               />
             </div>
-            <div className="transform hover:scale-105 transition-transform duration-300">
+            <div className="transform hover:scale-105 transition-transform duration-300 flex justify-center">
               <Image
                 src="/Recurso 2.png"
                 alt="Producto talabartería 2"
                 width={0}
                 height={0}
                 sizes="100vw"
-                className="w-auto h-auto"
+                className="w-auto h-auto max-h-64 md:max-h-none"
                 priority
               />
             </div>
-            <div className="transform hover:scale-105 transition-transform duration-300">
+            <div className="transform hover:scale-105 transition-transform duration-300 flex justify-center">
               <Image
                 src="/Recurso 3.png"
                 alt="Producto talabartería 3"
                 width={0}
                 height={0}
                 sizes="100vw"
-                className="w-auto h-auto"
+                className="w-auto h-auto max-h-64 md-h-none"
                 priority
               />
             </div>
