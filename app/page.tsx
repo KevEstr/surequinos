@@ -137,25 +137,25 @@ export default function SurequinosLanding() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#a13815] py-8 text-white">
+      <footer className="bg-[#a13815] py-6 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Sedes */}
-            <div>
-              <h5 className="font-merriweather font-bold text-lg mb-4">Sedes:</h5>
-              <div className="space-y-2 font-myriad text-sm">
-                <p>Sabaneta: Cra. 43A #65 Sur-86</p>
-                <p>Girardota: Auto Norte Km 20 vía Girardota</p>
-                <p>Abingardota: Km 7 vía Finca Toledo</p>
+            <div className="md:pl-0 md:-ml-16">
+              <h5 className="font-merriweather font-bold text-lg mb-1" style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }}>Sedes:</h5>
+              <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af', fontSize: '16px' }}>
+                <p style={{ margin: '0', padding: '0', lineHeight: '1.4' }}>Sabaneta: Cra. 46A #68 Sur-86</p>
+                <p style={{ margin: '0', padding: '0', lineHeight: '1.4' }}>Girardota: Auto Norte, Km 20 vía Girardota</p>
+                <p style={{ margin: '0', padding: '0', lineHeight: '1.4' }}>Llanogrande: km7 Mall Plaza Toledo</p>
               </div>
             </div>
 
             {/* Contacto */}
-            <div className="text-right">
-              <h5 className="font-merriweather font-bold text-lg mb-4">Contacto:</h5>
-              <div className="space-y-2 font-myriad text-sm">
-                <p>WhatsApp Sede Sabaneta: +57 3163902629</p>
-                <p>WhatsApp Sede Girardota: +57</p>
+            <div className="md:ml-auto">
+              <h5 className="font-merriweather font-bold text-lg mb-1" style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }}>Contacto:</h5>
+              <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af', fontSize: '16px' }}>
+                <p style={{ margin: '0', padding: '0', lineHeight: '1.4' }}>Whatsapp Sede Sabaneta: +573163902625</p>
+                <p style={{ margin: '0', padding: '0', lineHeight: '1.4' }}>Whatsapp Sede Girardota: +57</p>
               </div>
             </div>
           </div>
