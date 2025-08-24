@@ -4,14 +4,14 @@ export default function SurequinosLanding() {
   return (
     <div className="min-h-screen bg-white">
                   {/* Logo */}
-      <div className="bg-[#a13815] flex justify-center items-center h-24">
+      <div className="bg-[#a13815] flex justify-center items-center h-20 md:h-24">
         <Image
           src="/logo.png"
           alt="Talabartería Surequinos - Logo"
           width={0}
           height={0}
           sizes="100vw"
-          className="h-48 w-auto"
+          className="h-32 md:h-48 w-auto"
           priority
         />
       </div>
@@ -24,7 +24,7 @@ export default function SurequinosLanding() {
           width={0}
           height={0}
           sizes="100vw"
-          className="w-full h-auto object-contain"
+          className="w-full h-auto object-contain transform scale-110 md:scale-100"
           priority
         />
       </section>
@@ -37,7 +37,7 @@ export default function SurequinosLanding() {
           width={0}
           height={0}
           sizes="100vw"
-          className="w-full h-auto object-contain"
+          className="w-full h-auto object-contain transform scale-110 md:scale-100"
           priority
         />
       </section>
@@ -56,11 +56,11 @@ export default function SurequinosLanding() {
       </section>
 
       {/* Product Gallery */}
-      <section className="py-6 md:py-12 bg-[#ddd0bd]">
-        <div className="container mx-auto px-4">
+      <section className="py-2 md:py-6 bg-[#ddd0bd]">
+        <div className="container mx-auto px-1 md:px-2">
           {/* Mobile: Horizontal Scrollable, Desktop: Grid */}
           <div className="md:hidden">
-            <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide justify-center">
+            <div className="flex gap-3 overflow-x-auto py-1 scrollbar-hide justify-center px-4">
               <div className="flex-shrink-0 transform hover:scale-105 transition-transform duration-300">
                 <Image
                   src="/Recurso 1.png"
@@ -68,7 +68,7 @@ export default function SurequinosLanding() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="w-auto h-auto max-h-40"
+                  className="w-auto h-auto max-h-48"
                   priority
                 />
               </div>
@@ -79,7 +79,7 @@ export default function SurequinosLanding() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="w-auto h-auto max-h-40"
+                  className="w-auto h-auto max-h-48"
                   priority
                 />
               </div>
@@ -90,7 +90,7 @@ export default function SurequinosLanding() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="w-auto h-auto max-h-40"
+                  className="w-auto h-auto max-h-48"
                   priority
                 />
               </div>
@@ -98,7 +98,7 @@ export default function SurequinosLanding() {
           </div>
           
           {/* Desktop: Grid Layout */}
-          <div className="hidden md:grid grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="hidden md:grid grid-cols-3 gap-1 max-w-6xl mx-auto">
             <div className="transform hover:scale-105 transition-transform duration-300 flex justify-center">
               <Image
                 src="/Recurso 1.png"
@@ -106,7 +106,7 @@ export default function SurequinosLanding() {
                 width={0}
                 height={0}
                 sizes="100vw"
-                className="w-auto h-auto"
+                className="w-auto h-auto max-h-[28rem]"
                 priority
               />
             </div>
@@ -117,7 +117,7 @@ export default function SurequinosLanding() {
                 width={0}
                 height={0}
                 sizes="100vw"
-                className="w-auto h-auto"
+                className="w-auto h-auto max-h-[28rem]"
                 priority
               />
             </div>
@@ -128,7 +128,7 @@ export default function SurequinosLanding() {
                 width={0}
                 height={0}
                 sizes="100vw"
-                className="w-auto h-auto"
+                className="w-auto h-auto max-h-[28rem]"
                 priority
               />
             </div>
@@ -142,20 +142,20 @@ export default function SurequinosLanding() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Sedes */}
             <div className="md:pl-0 md:-ml-16">
-              <h5 className="font-merriweather font-bold text-lg mb-1" style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }}>Sedes:</h5>
-              <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af', fontSize: '16px' }}>
-                <p style={{ margin: '0', padding: '0', lineHeight: '1.4' }}>Sabaneta: Cra. 46A #68 Sur-86</p>
-                <p style={{ margin: '0', padding: '0', lineHeight: '1.4' }}>Girardota: Auto Norte, Km 20 vía Girardota</p>
-                <p style={{ margin: '0', padding: '0', lineHeight: '1.4' }}>Llanogrande: km7 Mall Plaza Toledo</p>
+              <h5 className="font-merriweather font-bold text-sm md:text-xl mb-1" style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }}>Sedes:</h5>
+              <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }} className="text-xs md:text-lg">
+                <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Sabaneta: Cra. 46A #68 Sur-86</p>
+                <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Girardota: Auto Norte, Km 20 vía Girardota</p>
+                <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Llanogrande: km7 Mall Plaza Toledo</p>
               </div>
             </div>
 
             {/* Contacto */}
             <div className="md:ml-auto">
-              <h5 className="font-merriweather font-bold text-lg mb-1" style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }}>Contacto:</h5>
-              <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af', fontSize: '16px' }}>
-                <p style={{ margin: '0', padding: '0', lineHeight: '1.4' }}>Whatsapp Sede Sabaneta: +573163902625</p>
-                <p style={{ margin: '0', padding: '0', lineHeight: '1.4' }}>Whatsapp Sede Girardota: +57</p>
+              <h5 className="font-merriweather font-bold text-sm md:text-xl mb-1" style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }}>Contacto:</h5>
+              <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }} className="text-xs md:text-lg">
+                <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Whatsapp Sede Sabaneta: +573163902625</p>
+                <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Whatsapp Sede Girardota: +57</p>
               </div>
             </div>
           </div>
