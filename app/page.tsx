@@ -24,7 +24,7 @@ export default function SurequinosLanding() {
           width={0}
           height={0}
           sizes="100vw"
-          className="w-full h-auto"
+          className="w-full h-auto object-contain"
           priority
         />
       </section>
@@ -37,7 +37,7 @@ export default function SurequinosLanding() {
           width={0}
           height={0}
           sizes="100vw"
-          className="w-full h-auto"
+          className="w-full h-auto object-contain"
           priority
         />
       </section>
@@ -50,17 +50,17 @@ export default function SurequinosLanding() {
           width={0}
           height={0}
           sizes="100vw"
-          className="w-full h-auto"
+          className="w-full h-auto object-contain"
           priority
         />
       </section>
 
       {/* Product Gallery */}
-      <section className="py-12 bg-[#ddd0bd]">
+      <section className="py-6 md:py-12 bg-[#ddd0bd]">
         <div className="container mx-auto px-4">
           {/* Mobile: Horizontal Scrollable, Desktop: Grid */}
           <div className="md:hidden">
-            <div className="flex gap-6 overflow-x-auto pb-4 scrollbar-hide">
+            <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide justify-center">
               <div className="flex-shrink-0 transform hover:scale-105 transition-transform duration-300">
                 <Image
                   src="/Recurso 1.png"
@@ -68,7 +68,7 @@ export default function SurequinosLanding() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="w-auto h-auto max-h-64"
+                  className="w-auto h-auto max-h-40"
                   priority
                 />
               </div>
@@ -79,7 +79,7 @@ export default function SurequinosLanding() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="w-auto h-auto max-h-64"
+                  className="w-auto h-auto max-h-40"
                   priority
                 />
               </div>
@@ -90,7 +90,7 @@ export default function SurequinosLanding() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="w-auto h-auto max-h-64"
+                  className="w-auto h-auto max-h-40"
                   priority
                 />
               </div>
