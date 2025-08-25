@@ -59,8 +59,8 @@ export default function SurequinosLanding() {
       <section className="py-2 md:py-6 bg-[#ddd0bd]">
         <div className="container mx-auto px-1 md:px-2">
           {/* Mobile: Horizontal Scrollable, Desktop: Grid */}
-          <div className="md:hidden">
-            <div className="flex gap-3 overflow-x-auto py-1 scrollbar-hide justify-center px-4">
+          <div className="md:hidden overflow-hidden">
+            <div className="flex gap-3 overflow-x-auto py-1 scrollbar-hide justify-center px-4 max-w-full">
               <div className="flex-shrink-0 transform hover:scale-105 transition-transform duration-300">
                 <Image
                   src="/Recurso 1.png"
@@ -137,11 +137,11 @@ export default function SurequinosLanding() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#a13815] pt-3 pb-4 md:py-6 text-white">
+      <footer className="bg-[#a13815] pt-2 pb-3 md:py-6 text-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 gap-1 md:grid-cols-2 md:gap-8 max-w-none md:max-w-4xl w-full px-2 mx-auto overflow-hidden">
+          <div className="grid grid-cols-2 gap-1 md:grid-cols-2 md:gap-8 w-full max-w-full md:max-w-4xl px-2 mx-auto overflow-hidden">
             {/* Sedes */}
-            <div className="md:pl-0 md:-ml-16 min-w-0">
+            <div className="md:pl-0 md:-ml-16 min-w-0 overflow-hidden">
               <h5 className="font-merriweather font-bold text-[11px] md:text-xl mb-1" style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }}>Sedes:</h5>
               <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }} className="text-[10px] md:text-lg break-words whitespace-normal">
                 <p className="m-0 p-0 leading-[1.1] md:leading-[1.3] break-words">Sabaneta: Cra. 46A #68 Sur-86</p>
@@ -151,7 +151,7 @@ export default function SurequinosLanding() {
             </div>
 
             {/* Contacto */}
-            <div className="md:ml-auto min-w-0">
+            <div className="md:ml-auto min-w-0 overflow-hidden">
               <h5 className="font-merriweather font-bold text-[11px] md:text-xl mb-1" style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }}>Contacto:</h5>
               <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }} className="text-[10px] md:text-lg break-words whitespace-normal">
                 <p className="m-0 p-0 leading-[1.1] md:leading-[1.3] break-words">Whatsapp Sede Sabaneta: +573163902625</p>
