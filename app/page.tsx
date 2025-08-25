@@ -139,11 +139,11 @@ export default function SurequinosLanding() {
       {/* Footer */}
       <footer className="bg-[#a13815] pt-3 pb-4 md:py-6 text-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 gap-1 md:grid-cols-2 md:gap-8 max-w-4xl w-full px-2 mx-auto">
+          <div className="grid grid-cols-2 gap-1 md:grid-cols-2 md:gap-8 max-w-none md:max-w-4xl w-full px-2 mx-auto overflow-hidden">
             {/* Sedes */}
-            <div className="md:pl-0 md:-ml-16">
+            <div className="md:pl-0 md:-ml-16 min-w-0">
               <h5 className="font-merriweather font-bold text-[11px] md:text-xl mb-1" style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }}>Sedes:</h5>
-              <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }} className="text-[10px] md:text-lg break-words">
+              <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }} className="text-[10px] md:text-lg break-words whitespace-normal">
                 <p className="m-0 p-0 leading-[1.1] md:leading-[1.3] break-words">Sabaneta: Cra. 46A #68 Sur-86</p>
                 <p className="m-0 p-0 leading-[1.1] md:leading-[1.3] break-words">Girardota: Auto Norte, Km 20 vía Girardota</p>
                 <p className="m-0 p-0 leading-[1.1] md:leading-[1.3] break-words">Llanogrande: km7 Mall Plaza Toledo</p>
@@ -151,9 +151,9 @@ export default function SurequinosLanding() {
             </div>
 
             {/* Contacto */}
-            <div className="md:ml-auto">
+            <div className="md:ml-auto min-w-0">
               <h5 className="font-merriweather font-bold text-[11px] md:text-xl mb-1" style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }}>Contacto:</h5>
-              <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }} className="text-[10px] md:text-lg break-words">
+              <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }} className="text-[10px] md:text-lg break-words whitespace-normal">
                 <p className="m-0 p-0 leading-[1.1] md:leading-[1.3] break-words">Whatsapp Sede Sabaneta: +573163902625</p>
                 <p className="m-0 p-0 leading-[1.1] md:leading-[1.3] break-words">Whatsapp Sede Girardota: +57</p>
               </div>
