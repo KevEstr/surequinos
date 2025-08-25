@@ -17,27 +17,27 @@ export default function SurequinosLanding() {
       </div>
 
       {/* Main Image Area - Unificada con "El arte de ensillar" */}
-      <section className="w-full">
+      <section className="w-full overflow-hidden">
         <Image
           src="/arte.png"
           alt="El arte de ensillar - Talabartería Surequinos"
           width={0}
           height={0}
           sizes="100vw"
-          className="w-full h-auto object-contain transform scale-110 md:scale-100"
+          className="w-full h-auto object-contain md:object-contain"
           priority
         />
       </section>
 
       {/* Main Content Section */}
-      <section className="w-full">
+      <section className="w-full overflow-hidden">
         <Image
           src="/preparando.png"
           alt="Estamos preparando nuestra nueva página web"
           width={0}
           height={0}
           sizes="100vw"
-          className="w-full h-auto object-contain transform scale-110 md:scale-100"
+          className="w-full h-auto object-contain md:object-contain"
           priority
         />
       </section>
@@ -137,13 +137,13 @@ export default function SurequinosLanding() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#a13815] py-6 text-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <footer className="bg-[#a13815] py-3 md:py-6 text-white">
+        <div className="container mx-auto px-3 md:px-4">
+          <div className="grid grid-cols-2 gap-3 md:gap-8 max-w-4xl mx-auto">
             {/* Sedes */}
             <div className="md:pl-0 md:-ml-16">
-              <h5 className="font-merriweather font-bold text-sm md:text-xl mb-1" style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }}>Sedes:</h5>
-              <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }} className="text-xs md:text-lg">
+              <h5 className="font-merriweather font-bold text-[10px] md:text-xl mb-1" style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }}>Sedes:</h5>
+              <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }} className="text-[9px] leading-tight md:text-lg">
                 <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Sabaneta: Cra. 46A #68 Sur-86</p>
                 <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Girardota: Auto Norte, Km 20 vía Girardota</p>
                 <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Llanogrande: km7 Mall Plaza Toledo</p>
@@ -152,8 +152,14 @@ export default function SurequinosLanding() {
 
             {/* Contacto */}
             <div className="md:ml-auto">
-              <h5 className="font-merriweather font-bold text-sm md:text-xl mb-1" style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }}>Contacto:</h5>
-              <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }} className="text-xs md:text-lg">
+              <h5 className="font-merriweather font-bold text-[10px] md:text-xl mb-1" style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }}>Contacto:</h5>
+              {/* Mobile: sin la palabra "Whatsapp" y en dos líneas */}
+              <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }} className="text-[9px] leading-tight md:hidden">
+                <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Sabaneta: +573163902625</p>
+                <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Girardota: +57</p>
+              </div>
+              {/* Desktop: texto completo como antes */}
+              <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }} className="hidden md:block md:text-lg">
                 <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Whatsapp Sede Sabaneta: +573163902625</p>
                 <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Whatsapp Sede Girardota: +57</p>
               </div>
