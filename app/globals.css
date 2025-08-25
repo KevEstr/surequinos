@@ -97,7 +97,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-merriweather;
+    @apply bg-background text-foreground font-merriweather overflow-x-hidden;
   }
 }
 

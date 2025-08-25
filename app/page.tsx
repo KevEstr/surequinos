@@ -17,7 +17,7 @@ export default function SurequinosLanding() {
       </div>
 
       {/* Main Image Area - Unificada con "El arte de ensillar" */}
-      <section className="w-full">
+      <section className="w-full overflow-hidden">
         <Image
           src="/arte.png"
           alt="El arte de ensillar - Talabartería Surequinos"
@@ -30,7 +30,7 @@ export default function SurequinosLanding() {
       </section>
 
       {/* Main Content Section */}
-      <section className="w-full">
+      <section className="w-full overflow-hidden">
         <Image
           src="/preparando.png"
           alt="Estamos preparando nuestra nueva página web"
@@ -43,7 +43,7 @@ export default function SurequinosLanding() {
       </section>
 
       {/* Instagram Banner - Full Width */}
-      <section className="w-full">
+      <section className="w-full overflow-hidden">
         <Image
           src="/siguenos.png"
           alt="Síguenos en instagram"
@@ -139,7 +139,7 @@ export default function SurequinosLanding() {
       {/* Footer */}
       <footer className="bg-[#a13815] py-6 text-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 gap-2 md:grid-cols-2 md:gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 gap-2 md:grid-cols-2 md:gap-8 max-w-4xl w-full px-2 mx-auto">
             {/* Sedes */}
             <div className="md:pl-0 md:-ml-16">
               <h5 className="font-merriweather font-bold text-[11px] md:text-xl mb-1" style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }}>Sedes:</h5>
