@@ -17,40 +17,40 @@ export default function SurequinosLanding() {
       </div>
 
       {/* Main Image Area - Unificada con "El arte de ensillar" */}
-      <section className="w-full overflow-hidden">
+      <section className="w-full">
         <Image
           src="/arte.png"
           alt="El arte de ensillar - Talabartería Surequinos"
           width={0}
           height={0}
           sizes="100vw"
-          className="block w-full h-auto object-contain"
+          className="w-full h-auto object-contain transform scale-110 md:scale-100"
           priority
         />
       </section>
 
       {/* Main Content Section */}
-      <section className="w-full overflow-hidden">
+      <section className="w-full">
         <Image
           src="/preparando.png"
           alt="Estamos preparando nuestra nueva página web"
           width={0}
           height={0}
           sizes="100vw"
-          className="block w-full h-auto object-contain"
+          className="w-full h-auto object-contain transform scale-110 md:scale-100"
           priority
         />
       </section>
 
       {/* Instagram Banner - Full Width */}
-      <section className="w-full overflow-hidden">
+      <section className="w-full">
         <Image
           src="/siguenos.png"
           alt="Síguenos en instagram"
           width={0}
           height={0}
           sizes="100vw"
-          className="block w-full h-auto object-contain"
+          className="w-full h-auto object-contain"
           priority
         />
       </section>
@@ -59,8 +59,8 @@ export default function SurequinosLanding() {
       <section className="py-2 md:py-6 bg-[#ddd0bd]">
         <div className="container mx-auto px-1 md:px-2">
           {/* Mobile: Horizontal Scrollable, Desktop: Grid */}
-          <div className="md:hidden overflow-hidden">
-            <div className="flex gap-3 overflow-x-auto py-1 scrollbar-hide justify-center px-4 max-w-full">
+          <div className="md:hidden">
+            <div className="flex gap-3 overflow-x-auto py-1 scrollbar-hide justify-center px-4">
               <div className="flex-shrink-0 transform hover:scale-105 transition-transform duration-300">
                 <Image
                   src="/Recurso 1.png"
@@ -137,25 +137,25 @@ export default function SurequinosLanding() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#a13815] pt-2 pb-3 md:py-6 text-white">
+      <footer className="bg-[#a13815] py-6 text-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 gap-1 md:grid-cols-2 md:gap-8 w-full max-w-full md:max-w-4xl px-2 mx-auto overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Sedes */}
-            <div className="md:pl-0 md:-ml-16 min-w-0 overflow-hidden">
-              <h5 className="font-merriweather font-bold text-[11px] md:text-xl mb-1" style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }}>Sedes:</h5>
-              <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }} className="text-[10px] md:text-lg break-words whitespace-normal">
-                <p className="m-0 p-0 leading-[1.1] md:leading-[1.3] break-words">Sabaneta: Cra. 46A #68 Sur-86</p>
-                <p className="m-0 p-0 leading-[1.1] md:leading-[1.3] break-words">Girardota: Auto Norte, Km 20 vía Girardota</p>
-                <p className="m-0 p-0 leading-[1.1] md:leading-[1.3] break-words">Llanogrande: km7 Mall Plaza Toledo</p>
+            <div className="md:pl-0 md:-ml-16">
+              <h5 className="font-merriweather font-bold text-sm md:text-xl mb-1" style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }}>Sedes:</h5>
+              <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }} className="text-xs md:text-lg">
+                <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Sabaneta: Cra. 46A #68 Sur-86</p>
+                <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Girardota: Auto Norte, Km 20 vía Girardota</p>
+                <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Llanogrande: km7 Mall Plaza Toledo</p>
               </div>
             </div>
 
             {/* Contacto */}
-            <div className="md:ml-auto min-w-0 overflow-hidden">
-              <h5 className="font-merriweather font-bold text-[11px] md:text-xl mb-1" style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }}>Contacto:</h5>
-              <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }} className="text-[10px] md:text-lg break-words whitespace-normal">
-                <p className="m-0 p-0 leading-[1.1] md:leading-[1.3] break-words">Whatsapp Sede Sabaneta: +573163902625</p>
-                <p className="m-0 p-0 leading-[1.1] md:leading-[1.3] break-words">Whatsapp Sede Girardota: +57</p>
+            <div className="md:ml-auto">
+              <h5 className="font-merriweather font-bold text-sm md:text-xl mb-1" style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }}>Contacto:</h5>
+              <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }} className="text-xs md:text-lg">
+                <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Whatsapp Sede Sabaneta: +573163902625</p>
+                <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Whatsapp Sede Girardota: +57</p>
               </div>
             </div>
           </div>
