@@ -61,50 +61,77 @@ export default function SurequinosLanding() {
         <div className="container mx-auto px-1 md:px-2">
           {/* Mobile: Horizontal Scrollable */}
           <div className="md:hidden">
-            <div className="flex gap-3 overflow-x-auto py-1 scrollbar-hide justify-center px-4">
-              <div className="flex-shrink-0 w-80">
-                <InstagramEmbed
-                  postUrl="https://www.instagram.com/p/DMRV_OkMYwT/?img_index=1"
-                  width={320}
-                  height={400}
-                />
+            <div className="flex gap-3 overflow-x-auto py-1 scrollbar-hide px-4 snap-x snap-mandatory">
+              <div className="flex-shrink-0 w-80 h-[350px] overflow-hidden snap-start">
+                <div className="w-full h-full [&_.instagram-media]:!h-full [&_.instagram-media]:!min-h-[350px]">
+                  <InstagramEmbed
+                    postUrl="https://www.instagram.com/p/C85T9sUJjDH/"
+                    width={280}
+                    height={350}
+                  />
+                </div>
               </div>
-              <div className="flex-shrink-0 w-80">
-                <InstagramEmbed
-                  postUrl="https://www.instagram.com/p/DF0u05TSH1E/?img_index=1"
-                  width={320}
-                  height={400}
-                />
+              <div className="flex-shrink-0 w-80 h-[350px] overflow-hidden snap-start">
+                <div className="w-full h-full [&_.instagram-media]:!h-full [&_.instagram-media]:!min-h-[350px]">
+                  <InstagramEmbed
+                    postUrl="https://www.instagram.com/p/DL8fC_sOdw_/?img_index=1"
+                    width={280}
+                    height={350}
+                  />
+                </div>
               </div>
-              <div className="flex-shrink-0 w-80">
-                <InstagramEmbed
-                  postUrl="https://www.instagram.com/p/C-sMHVIpFO1/"
-                  width={320}
-                  height={400}
-                />
+              <div className="flex-shrink-0 w-80 h-[350px] overflow-hidden snap-start">
+                <div className="w-full h-full [&_.instagram-media]:!h-full [&_.instagram-media]:!min-h-[350px]">
+                  <InstagramEmbed
+                    postUrl="https://www.instagram.com/p/C9tKqQKJhEj/"
+                    width={280}
+                    height={350}
+                  />
+                </div>
               </div>
             </div>
           </div>
           
           {/* Desktop: Grid Layout */}
           <div className="hidden md:grid grid-cols-3 gap-4 max-w-6xl mx-auto">
-            <div className="transform hover:scale-105 transition-transform duration-300 flex justify-center">
+            <div className="transform hover:scale-105 transition-transform duration-300 flex justify-center cursor-pointer relative group">
+              <a 
+                href="https://www.instagram.com/p/C85T9sUJjDH/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="absolute inset-0 z-10"
+                aria-label="Ver post completo en Instagram"
+              />
               <InstagramEmbed
-                postUrl="https://www.instagram.com/p/DMRV_OkMYwT/?img_index=1"
+                postUrl="https://www.instagram.com/p/C85T9sUJjDH/"
                 width={400}
                 height={500}
               />
             </div>
-            <div className="transform hover:scale-105 transition-transform duration-300 flex justify-center">
+            <div className="transform hover:scale-105 transition-transform duration-300 flex justify-center cursor-pointer relative group">
+              <a 
+                href="https://www.instagram.com/p/DL8fC_sOdw_/?img_index=1" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="absolute inset-0 z-10"
+                aria-label="Ver post completo en Instagram"
+              />
               <InstagramEmbed
-                postUrl="https://www.instagram.com/p/DF0u05TSH1E/?img_index=1"
+                postUrl="https://www.instagram.com/p/DL8fC_sOdw_/?img_index=1"
                 width={400}
                 height={500}
               />
             </div>
-            <div className="transform hover:scale-105 transition-transform duration-300 flex justify-center">
+            <div className="transform hover:scale-105 transition-transform duration-300 flex justify-center cursor-pointer relative group">
+              <a 
+                href="https://www.instagram.com/p/C9tKqQKJhEj/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="absolute inset-0 z-10"
+                aria-label="Ver post completo en Instagram"
+              />
               <InstagramEmbed
-                postUrl="https://www.instagram.com/p/C-sMHVIpFO1/"
+                postUrl="https://www.instagram.com/p/C9tKqQKJhEj/"
                 width={400}
                 height={500}
               />
@@ -133,12 +160,12 @@ export default function SurequinosLanding() {
               {/* Mobile: sin la palabra "Whatsapp" y en dos líneas */}
               <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }} className="text-[9px] leading-tight md:hidden">
                 <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Sabaneta: +573163902625</p>
-                <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Girardota: +57</p>
+                <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Girardota: +573245176873</p>
               </div>
               {/* Desktop: texto completo como antes */}
               <div style={{ fontFamily: '"Merriweather24pt"', color: '#d3c4af' }} className="hidden md:block md:text-lg">
                 <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Whatsapp Sede Sabaneta: +573163902625</p>
-                <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Whatsapp Sede Girardota: +57</p>
+                <p style={{ margin: '0', padding: '0', lineHeight: '1.3' }}>Whatsapp Sede Girardota: +573245176873</p>
               </div>
             </div>
           </div>
