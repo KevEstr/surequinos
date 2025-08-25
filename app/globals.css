@@ -2,6 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Instagram Embed Responsive Styles */
+.instagram-embed-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.instagram-embed-container .instagram-media {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.instagram-embed-container iframe {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 400px !important;
+  max-height: 600px !important;
+  border: none !important;
+  border-radius: 8px !important;
+}
+
+/* Responsive adjustments - Simple height reduction */
+@media (max-width: 768px) {
+  .instagram-embed-container iframe {
+    min-height: 300px !important;
+    max-height: 450px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .instagram-embed-container iframe {
+    min-height: 250px !important;
+    max-height: 400px !important;
+  }
+}
+
 /* Hide scrollbar for mobile gallery */
 .scrollbar-hide {
   -ms-overflow-style: none;

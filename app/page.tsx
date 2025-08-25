@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { InstagramEmbed } from "@/components/instagram-embed"
 
 export default function SurequinosLanding() {
   return (
@@ -55,81 +56,57 @@ export default function SurequinosLanding() {
         />
       </section>
 
-      {/* Product Gallery */}
+      {/* Instagram Posts Gallery */}
       <section className="py-2 md:py-6 bg-[#ddd0bd]">
         <div className="container mx-auto px-1 md:px-2">
-          {/* Mobile: Horizontal Scrollable, Desktop: Grid */}
+          {/* Mobile: Horizontal Scrollable */}
           <div className="md:hidden">
             <div className="flex gap-3 overflow-x-auto py-1 scrollbar-hide justify-center px-4">
-              <div className="flex-shrink-0 transform hover:scale-105 transition-transform duration-300">
-                <Image
-                  src="/Recurso 1.png"
-                  alt="Producto talabartería 1"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-auto h-auto max-h-48"
-                  priority
+              <div className="flex-shrink-0 w-80">
+                <InstagramEmbed
+                  postUrl="https://www.instagram.com/p/DMRV_OkMYwT/?img_index=1"
+                  width={320}
+                  height={400}
                 />
               </div>
-              <div className="flex-shrink-0 transform hover:scale-105 transition-transform duration-300">
-                <Image
-                  src="/Recurso 2.png"
-                  alt="Producto talabartería 2"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-auto h-auto max-h-48"
-                  priority
+              <div className="flex-shrink-0 w-80">
+                <InstagramEmbed
+                  postUrl="https://www.instagram.com/p/DF0u05TSH1E/?img_index=1"
+                  width={320}
+                  height={400}
                 />
               </div>
-              <div className="flex-shrink-0 transform hover:scale-105 transition-transform duration-300">
-                <Image
-                  src="/Recurso 3.png"
-                  alt="Producto talabartería 3"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-auto h-auto max-h-48"
-                  priority
+              <div className="flex-shrink-0 w-80">
+                <InstagramEmbed
+                  postUrl="https://www.instagram.com/p/C-sMHVIpFO1/"
+                  width={320}
+                  height={400}
                 />
               </div>
             </div>
           </div>
           
           {/* Desktop: Grid Layout */}
-          <div className="hidden md:grid grid-cols-3 gap-1 max-w-6xl mx-auto">
+          <div className="hidden md:grid grid-cols-3 gap-4 max-w-6xl mx-auto">
             <div className="transform hover:scale-105 transition-transform duration-300 flex justify-center">
-              <Image
-                src="/Recurso 1.png"
-                alt="Producto talabartería 1"
-                width={0}
-                height={0}
-                sizes="100vw"
-                className="w-auto h-auto max-h-[28rem]"
-                priority
+              <InstagramEmbed
+                postUrl="https://www.instagram.com/p/DMRV_OkMYwT/?img_index=1"
+                width={400}
+                height={500}
               />
             </div>
             <div className="transform hover:scale-105 transition-transform duration-300 flex justify-center">
-              <Image
-                src="/Recurso 2.png"
-                alt="Producto talabartería 2"
-                width={0}
-                height={0}
-                sizes="100vw"
-                className="w-auto h-auto max-h-[28rem]"
-                priority
+              <InstagramEmbed
+                postUrl="https://www.instagram.com/p/DF0u05TSH1E/?img_index=1"
+                width={400}
+                height={500}
               />
             </div>
             <div className="transform hover:scale-105 transition-transform duration-300 flex justify-center">
-              <Image
-                src="/Recurso 3.png"
-                alt="Producto talabartería 3"
-                width={0}
-                height={0}
-                sizes="100vw"
-                className="w-auto h-auto max-h-[28rem]"
-                priority
+              <InstagramEmbed
+                postUrl="https://www.instagram.com/p/C-sMHVIpFO1/"
+                width={400}
+                height={500}
               />
             </div>
           </div>
