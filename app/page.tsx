@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { InstagramEmbed } from "@/components/instagram-embed"
+import { InstagramPost } from "@/components/instagram-post"
 
 export default function SurequinosLanding() {
   return (
@@ -57,37 +58,33 @@ export default function SurequinosLanding() {
       </section>
 
       {/* Instagram Posts Gallery */}
-      <section className="pt-4 pb-2 md:py-6 bg-[#ddd0bd]">
+      <section className="pt-2 pb-2 md:py-6 bg-[#ddd0bd]">
         <div className="container mx-auto px-0 md:px-2">
-          {/* Mobile: Horizontal Scrollable */}
+          {/* Mobile: Instagram Posts Personalizados */}
           <div className="md:hidden">
-            <div className="flex gap-2 overflow-x-auto py-2 scrollbar-hide px-2 snap-x snap-mandatory" style={{ margin: 0, padding: 0 }}>
-              <div className="flex-shrink-0 w-64 h-[260px] overflow-hidden snap-start" style={{ margin: 0, padding: 0 }}>
-                <div className="w-full h-full" style={{ margin: 0, padding: 0, lineHeight: 0 }}>
-                  <InstagramEmbed
-                    postUrl="https://www.instagram.com/p/C85T9sUJjDH/"
-                    width={256}
-                    height={260}
-                  />
-                </div>
+            <div className="flex gap-2 overflow-x-auto py-2 scrollbar-hide px-2 snap-x snap-mandatory">
+              <div className="flex-shrink-0 w-40 h-[160px] overflow-hidden snap-start">
+                <InstagramPost
+                  username="surequinos"
+                  postImage="/primera.jpg"
+                  isCarousel={false}
+                  imagePosition="center top"
+                />
               </div>
-              <div className="flex-shrink-0 w-64 h-[260px] overflow-hidden snap-start" style={{ margin: 0, padding: 0 }}>
-                <div className="w-full h-full" style={{ margin: 0, padding: 0, lineHeight: 0 }}>
-                  <InstagramEmbed
-                    postUrl="https://www.instagram.com/p/DL8fC_sOdw_/?img_index=1"
-                    width={256}
-                    height={260}
-                  />
-                </div>
+              <div className="flex-shrink-0 w-40 h-[160px] overflow-hidden snap-start">
+                <InstagramPost
+                  username="surequinos"
+                  postImage="/medio.jpg"
+                  isCarousel={false}
+                  imagePosition="second image"
+                />
               </div>
-              <div className="flex-shrink-0 w-64 h-[260px] overflow-hidden snap-start" style={{ margin: 0, padding: 0 }}>
-                <div className="w-full h-full" style={{ margin: 0, padding: 0, lineHeight: 0 }}>
-                  <InstagramEmbed
-                    postUrl="https://www.instagram.com/p/C9tKqQKJhEj/"
-                    width={256}
-                    height={260}
-                  />
-                </div>
+              <div className="flex-shrink-0 w-40 h-[160px] overflow-hidden snap-start">
+                <InstagramPost
+                  username="surequinos"
+                  postImage="/tercero.jpg"
+                  isCarousel={true}
+                />
               </div>
             </div>
           </div>
