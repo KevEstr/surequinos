@@ -55,7 +55,7 @@ export function InstagramPost({
             />
           </div>
           <div>
-            <div className="font-semibold text-[11px] text-gray-900">Surequinos</div>
+            <div className="font-semibold text-[11px] text-gray-900" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif' }}>surequinos</div>
             {followers && (
               <div className="text-[9px] text-gray-500">{followers}</div>
             )}
