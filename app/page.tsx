@@ -21,7 +21,7 @@ export default function SurequinosLanding() {
       {/* Main Image Area - Unificada con "El arte de ensillar" */}
       <section className="w-full overflow-hidden">
         <Image
-          src="/arte.png"
+          src="/arte.webp"
           alt="El arte de ensillar - Talabartería Surequinos"
           width={0}
           height={0}
