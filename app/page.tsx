@@ -57,35 +57,35 @@ export default function SurequinosLanding() {
       </section>
 
       {/* Instagram Posts Gallery */}
-      <section className="py-2 md:py-6 bg-[#ddd0bd]">
-        <div className="container mx-auto px-1 md:px-2">
+      <section className="pt-4 pb-2 md:py-6 bg-[#ddd0bd]">
+        <div className="container mx-auto px-0 md:px-2">
           {/* Mobile: Horizontal Scrollable */}
           <div className="md:hidden">
-            <div className="flex gap-3 overflow-x-auto py-1 scrollbar-hide px-4 snap-x snap-mandatory">
-              <div className="flex-shrink-0 w-80 h-[350px] overflow-hidden snap-start">
-                <div className="w-full h-full [&_.instagram-media]:!h-full [&_.instagram-media]:!min-h-[350px]">
+            <div className="flex gap-2 overflow-x-auto py-2 scrollbar-hide px-2 snap-x snap-mandatory" style={{ margin: 0, padding: 0 }}>
+              <div className="flex-shrink-0 w-64 h-[260px] overflow-hidden snap-start" style={{ margin: 0, padding: 0 }}>
+                <div className="w-full h-full" style={{ margin: 0, padding: 0, lineHeight: 0 }}>
                   <InstagramEmbed
                     postUrl="https://www.instagram.com/p/C85T9sUJjDH/"
-                    width={280}
-                    height={350}
+                    width={256}
+                    height={260}
                   />
                 </div>
               </div>
-              <div className="flex-shrink-0 w-80 h-[350px] overflow-hidden snap-start">
-                <div className="w-full h-full [&_.instagram-media]:!h-full [&_.instagram-media]:!min-h-[350px]">
+              <div className="flex-shrink-0 w-64 h-[260px] overflow-hidden snap-start" style={{ margin: 0, padding: 0 }}>
+                <div className="w-full h-full" style={{ margin: 0, padding: 0, lineHeight: 0 }}>
                   <InstagramEmbed
                     postUrl="https://www.instagram.com/p/DL8fC_sOdw_/?img_index=1"
-                    width={280}
-                    height={350}
+                    width={256}
+                    height={260}
                   />
                 </div>
               </div>
-              <div className="flex-shrink-0 w-80 h-[350px] overflow-hidden snap-start">
-                <div className="w-full h-full [&_.instagram-media]:!h-full [&_.instagram-media]:!min-h-[350px]">
+              <div className="flex-shrink-0 w-64 h-[260px] overflow-hidden snap-start" style={{ margin: 0, padding: 0 }}>
+                <div className="w-full h-full" style={{ margin: 0, padding: 0, lineHeight: 0 }}>
                   <InstagramEmbed
                     postUrl="https://www.instagram.com/p/C9tKqQKJhEj/"
-                    width={280}
-                    height={350}
+                    width={256}
+                    height={260}
                   />
                 </div>
               </div>
