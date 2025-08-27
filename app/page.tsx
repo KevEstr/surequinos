@@ -4,9 +4,9 @@ import { InstagramPost } from "@/components/instagram-post"
 
 export default function SurequinosLanding() {
   return (
-    <div className="min-h-screen bg-white">
-                  {/* Logo */}
-      <div className="bg-[#a13815] flex justify-center items-center h-20 md:h-24">
+    <div className="min-h-screen bg-[#a13815]">
+      {/* Logo */}
+      <div className="flex justify-center items-center h-20 md:h-24">
         <Image
           src="/logo.png"
           alt="Talabartería Surequinos - Logo"
@@ -26,7 +26,7 @@ export default function SurequinosLanding() {
           width={0}
           height={0}
           sizes="100vw"
-          className="w-full h-auto object-contain md:object-contain"
+          className="w-full h-[300px] md:h-auto object-cover md:object-contain"
           priority
         />
       </section>
@@ -39,7 +39,7 @@ export default function SurequinosLanding() {
           width={0}
           height={0}
           sizes="100vw"
-          className="w-full h-auto object-contain md:object-contain"
+          className="w-full h-[180px] md:h-auto object-cover md:object-contain"
           priority
         />
       </section>
@@ -52,7 +52,7 @@ export default function SurequinosLanding() {
           width={0}
           height={0}
           sizes="100vw"
-          className="w-full h-auto object-contain"
+          className="w-full h-[60px] md:h-auto object-cover md:object-contain"
           priority
         />
       </section>
@@ -90,7 +90,7 @@ export default function SurequinosLanding() {
           </div>
           
           {/* Desktop: Grid Layout */}
-          <div className="hidden md:grid grid-cols-3 gap-4 max-w-6xl mx-auto">
+          <div className="hidden md:grid grid-cols-3 gap-6 max-w-7xl mx-auto">
             <div className="transform hover:scale-105 transition-transform duration-300 flex justify-center cursor-pointer relative group">
               <a 
                 href="https://www.instagram.com/p/C85T9sUJjDH/" 
@@ -101,8 +101,8 @@ export default function SurequinosLanding() {
               />
               <InstagramEmbed
                 postUrl="https://www.instagram.com/p/C85T9sUJjDH/"
-                width={400}
-                height={500}
+                width={500}
+                height={600}
               />
             </div>
             <div className="transform hover:scale-105 transition-transform duration-300 flex justify-center cursor-pointer relative group">
@@ -115,8 +115,8 @@ export default function SurequinosLanding() {
               />
               <InstagramEmbed
                 postUrl="https://www.instagram.com/p/DL8fC_sOdw_/?img_index=1"
-                width={400}
-                height={500}
+                width={500}
+                height={600}
               />
             </div>
             <div className="transform hover:scale-105 transition-transform duration-300 flex justify-center cursor-pointer relative group">
@@ -129,8 +129,8 @@ export default function SurequinosLanding() {
               />
               <InstagramEmbed
                 postUrl="https://www.instagram.com/p/C9tKqQKJhEj/"
-                width={400}
-                height={500}
+                width={500}
+                height={600}
               />
             </div>
           </div>
@@ -138,7 +138,7 @@ export default function SurequinosLanding() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#a13815] py-3 md:py-6 text-white">
+      <footer className="py-3 md:py-6 text-white">
         <div className="container mx-auto px-3 md:px-4">
           <div className="grid grid-cols-2 gap-3 md:gap-8 max-w-4xl mx-auto">
             {/* Sedes */}
