@@ -39,7 +39,7 @@ export default function SurequinosLanding() {
           width={0}
           height={0}
           sizes="100vw"
-          className="w-full h-[180px] md:h-auto object-cover md:object-contain"
+          className="w-full h-[170px] md:h-auto object-cover md:object-contain"
           priority
         />
       </section>
