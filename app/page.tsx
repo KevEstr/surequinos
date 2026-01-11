@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { InstagramEmbed } from "@/components/instagram-embed"
 import { InstagramPost } from "@/components/instagram-post"
+import { ComunicadoModal } from "@/components/comunicado-modal"
 
 export default function SurequinosLanding() {
   return (
@@ -55,32 +56,15 @@ export default function SurequinosLanding() {
       </section>
 
       {/* Comunicado Oficial - Contenido */}
-      <section className="w-full bg-[#ddd0bd] py-6 md:py-10">
-        <div className="px-5 md:px-12 lg:px-24 max-w-6xl mx-auto">
-          <div
-            className="text-[#3d2314] text-sm md:text-lg leading-relaxed space-y-4 md:space-y-5 text-center font-medium"
+      <section className="w-full bg-[#ddd0bd] py-4 md:py-8">
+        <div className="px-5 md:px-12 lg:px-24 max-w-4xl mx-auto flex flex-col items-center gap-4 md:gap-6">
+          <p
+            className="text-[#3d2314] text-sm md:text-lg leading-relaxed text-center font-medium"
             style={{ fontFamily: '"Merriweather24pt"' }}
           >
-            <p>
-              <span className="font-bold">SUREQUINOS®</span> informa a sus clientes, distribuidores y al público en general que la marca SUREQUINOS® se encuentra debidamente registrada ante la Superintendencia de Industria y Comercio de Colombia y protegida por la normativa vigente en materia de propiedad industrial.
-            </p>
-
-            <p>
-              En desarrollo de sus labores de vigilancia y defensa marcaria, SUREQUINOS® ha identificado el uso no autorizado de su marca y la presunta reproducción de sus productos por parte del señor <span className="font-bold text-[#a13815]">Hugo Rivera</span>, sin autorización, licencia ni vínculo comercial alguno con la empresa. Estas conductas se encuentran actualmente bajo análisis y siendo objeto de las acciones legales correspondientes.
-            </p>
-
-            <p>
-              En consecuencia, advertimos que los productos ofrecidos por el mencionado tercero <span className="font-bold italic text-[#a13815]">no son fabricados, distribuidos ni garantizados por SUREQUINOS®</span>, por lo cual la marca no se hace responsable por su calidad, autenticidad, procedencia o condiciones.
-            </p>
-
-            <p>
-              Recordamos que los únicos canales oficiales de comercialización de SUREQUINOS® son su página web <a href="https://www.surequinos.com/" target="_blank" rel="noopener noreferrer" className="text-[#a13815] font-bold underline hover:text-[#5c1a0a] transition-colors">www.surequinos.com</a>, sus sedes físicas y líneas de contacto oficiales.
-            </p>
-
-            <p>
-              SUREQUINOS® reafirma su compromiso con la autenticidad, la calidad y la protección de sus consumidores, y continuará ejerciendo las acciones necesarias para prevenir y sancionar cualquier uso no autorizado de su marca. Agradecemos a nuestros clientes y aliados por su confianza y por adquirir siempre productos a través de los canales oficiales.
-            </p>
-          </div>
+            <span className="font-bold">SUREQUINOS®</span> informa a sus clientes, distribuidores y al público en general que la marca SUREQUINOS® se encuentra debidamente registrada ante la Superintendencia de Industria y Comercio de Colombia y protegida por la normativa vigente en materia de propiedad industrial.
+          </p>
+          <ComunicadoModal />
         </div>
       </section>
 
