@@ -44,6 +44,46 @@ export default function SurequinosLanding() {
         />
       </section>
 
+      {/* Comunicado Oficial - Título en franja naranja */}
+      <section className="w-full bg-[#a13815] py-5 md:py-8">
+        <h2
+          className="text-center text-[#d3c4af] text-2xl md:text-5xl italic"
+          style={{ fontFamily: '"Merriweather24pt"' }}
+        >
+          Comunicado Oficial
+        </h2>
+      </section>
+
+      {/* Comunicado Oficial - Contenido */}
+      <section className="w-full bg-[#ddd0bd] py-6 md:py-10">
+        <div className="px-5 md:px-12 lg:px-24 max-w-6xl mx-auto">
+          <div
+            className="text-[#3d2314] text-sm md:text-lg leading-relaxed space-y-4 md:space-y-5 text-center font-medium"
+            style={{ fontFamily: '"Merriweather24pt"' }}
+          >
+            <p>
+              <span className="font-bold">SUREQUINOS®</span> informa a sus clientes, distribuidores y al público en general que la marca SUREQUINOS® se encuentra debidamente registrada ante la Superintendencia de Industria y Comercio de Colombia y protegida por la normativa vigente en materia de propiedad industrial.
+            </p>
+
+            <p>
+              En desarrollo de sus labores de vigilancia y defensa marcaria, SUREQUINOS® ha identificado el uso no autorizado de su marca y la presunta reproducción de sus productos por parte del señor <span className="font-bold text-[#a13815]">Hugo Rivera</span>, sin autorización, licencia ni vínculo comercial alguno con la empresa. Estas conductas se encuentran actualmente bajo análisis y siendo objeto de las acciones legales correspondientes.
+            </p>
+
+            <p>
+              En consecuencia, advertimos que los productos ofrecidos por el mencionado tercero <span className="font-bold italic text-[#a13815]">no son fabricados, distribuidos ni garantizados por SUREQUINOS®</span>, por lo cual la marca no se hace responsable por su calidad, autenticidad, procedencia o condiciones.
+            </p>
+
+            <p>
+              Recordamos que los únicos canales oficiales de comercialización de SUREQUINOS® son su página web <a href="https://www.surequinos.com/" target="_blank" rel="noopener noreferrer" className="text-[#a13815] font-bold underline hover:text-[#5c1a0a] transition-colors">www.surequinos.com</a>, sus sedes físicas y líneas de contacto oficiales.
+            </p>
+
+            <p>
+              SUREQUINOS® reafirma su compromiso con la autenticidad, la calidad y la protección de sus consumidores, y continuará ejerciendo las acciones necesarias para prevenir y sancionar cualquier uso no autorizado de su marca. Agradecemos a nuestros clientes y aliados por su confianza y por adquirir siempre productos a través de los canales oficiales.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Instagram Banner - Full Width */}
       <section className="w-full">
         <Image
@@ -88,13 +128,13 @@ export default function SurequinosLanding() {
               </div>
             </div>
           </div>
-          
+
           {/* Desktop: Grid Layout */}
           <div className="hidden md:grid grid-cols-3 gap-6 max-w-7xl mx-auto">
             <div className="transform hover:scale-105 transition-transform duration-300 flex justify-center cursor-pointer relative group">
-              <a 
-                href="https://www.instagram.com/p/C85T9sUJjDH/" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com/p/C85T9sUJjDH/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="absolute inset-0 z-10"
                 aria-label="Ver post completo en Instagram"
@@ -106,9 +146,9 @@ export default function SurequinosLanding() {
               />
             </div>
             <div className="transform hover:scale-105 transition-transform duration-300 flex justify-center cursor-pointer relative group">
-              <a 
-                href="https://www.instagram.com/p/DL8fC_sOdw_/?img_index=1" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com/p/DL8fC_sOdw_/?img_index=1"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="absolute inset-0 z-10"
                 aria-label="Ver post completo en Instagram"
@@ -120,9 +160,9 @@ export default function SurequinosLanding() {
               />
             </div>
             <div className="transform hover:scale-105 transition-transform duration-300 flex justify-center cursor-pointer relative group">
-              <a 
-                href="https://www.instagram.com/p/C9tKqQKJhEj/" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com/p/C9tKqQKJhEj/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="absolute inset-0 z-10"
                 aria-label="Ver post completo en Instagram"
